@@ -44,8 +44,8 @@ jobs:
         username: ${{ secrets.EC2_USERNAME }}
         key: ${{ secrets.EC2_SSH_PRIVATE_KEY }}
         script: |
-          docker pull ${{ secrets.DOCKER_HUB_USERNAME }}/todo:latest
+          docker pull ${{ secrets.DOCKER_HUB_USERNAME }}/api:latest
           docker stop my-todo || true
           docker rm my-todo || true
-          docker run -d --name my-todo -p 8000:8000 abudev22/todo:latest
+          docker run -d --name my-todo -p 8000:8000 abudev22/api:latest
           
