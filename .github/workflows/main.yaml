@@ -23,6 +23,7 @@ jobs:
       run: |
         docker build -t ${{ secrets.DOCKER_HUB_USERNAME }}/api .
         docker push ${{ secrets.DOCKER_HUB_USERNAME }}/api:latest
+        
    
 
 
