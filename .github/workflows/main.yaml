@@ -1,4 +1,4 @@
-ame: Deploy website to EC2 using AWS CodeDeploy 
+name: Deploy website to EC2 using AWS CodeDeploy 
  
 on: 
   push: 
